@@ -4,8 +4,10 @@ gzip
  gunzip file.gt
  gzip file
 
-tar
-
+tar xvf
+  x: extract
+  
+	
 umask
 
 chmod
@@ -73,9 +75,35 @@ ps
   - list of running processes
   PID TTY STAT TIME COMMAND
 
+udevadm
+
+chvt NUMBER
+  - switch to /dev/tty<NUMBER>
+
+dd
+ if=/dev/zero of=new_file bs=1024 count=1
+
+ - e.g. dd if=/dev/urandom bs=1k count=1 2>/dev/null | base64
+
+lsscsi
+ - list SCSI devices
+
+## Devices
+
+/dev/null -> kernel ignores input
+
+sysfs interface
+ - /sys/devices
+
+/dev/sd* -> hard disks
+
+Alt-F1 -> /dev/tty1
+Alt-F2 -> /dev/tty2
+
 ## Paths/Files
 
 /usr/share/doc -> Documentation for some programs
+/etc/sudoers -> let user run sudo commands
 
 ## Environment variable
 

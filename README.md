@@ -7,6 +7,9 @@ the obfuscated GNU command magic.
 
 Using VirtualBox running Ubuntu Server for experimenting.
 
+Right-Ctrl - Host Key
+
 ## Books
 
 - How Linux works: What every Superuser should know
+  - END: 36/338

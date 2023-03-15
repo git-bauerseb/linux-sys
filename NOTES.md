@@ -1,5 +1,23 @@
 ## Commands
 
+gzip
+ gunzip file.gt
+ gzip file
+
+tar
+
+umask
+
+chmod
+  - change permission
+  g+r file - add read to group
+  644 file - add 110 (read/write) to user, 100 (read) to group, 100 (read) to other
+
+  711/700/755 - directories
+
+fg
+bg
+
 cat
   - concatenate files
 
@@ -48,6 +66,13 @@ grep
 less
   - scrolling file
 
+tr pattern1 pattern2
+  - replace pattern1 by pattern2
+
+ps
+  - list of running processes
+  PID TTY STAT TIME COMMAND
+
 ## Paths/Files
 
 /usr/share/doc -> Documentation for some programs
@@ -64,6 +89,7 @@ Ctrl-P - previous command
 Ctrl-N - next command
 
 Ctrl-U - erase cursor <-> beginning
+Ctrl-L - redraw terminal
 
 ## Shell
 
@@ -87,4 +113,18 @@ Use VAR=VALUE to set variable VAR with value VALUE
   - access: $VAR
 
 Environment variable: Set and passed to programs
-  - 
+  - VAR=VALUE
+  - export VAR
+
+command > file -> send output to file
+command >> file -> append output to file
+com1 | com2 -> send output of com1 to input of com2
+
+com1 2> file -> send stderr to file
+2>&1 -> send stderr/stdout to same file
+
+Ctrl-Z - Stop process
+
+
+Symbolic link: File pointing to another file
+ ln -s target linkname
